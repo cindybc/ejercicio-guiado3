@@ -17,3 +17,10 @@ function Pokemon(nombre, color, poderDeAtaque){
 		pokemon.vida = pokemon.vida - this.poderDeAtaque
 	}
 };
+
+const Pikachu = new Pokemon("Pikachu", "amarillo", 100);
+const Charmander= new Pokemon("Charmander", "rojo", 20);
+
+Pikachu.atacar(Charmander);
+
+console.log(Charmander.vida);
